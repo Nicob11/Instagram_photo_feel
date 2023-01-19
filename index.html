@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Instagram</title>
+  </head>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar bg-body-tertiary">
+        <div class="col ms-5">
+          <a class="navbar-brand" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+        <!-- Button trigger modal -->
+        <div class="col text-end me-3">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Create a new post
+          </button>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Create a new post
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Caption:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  >
+                                Add the capion of your post here</textarea
+                  >
+                  <button type="button" class="btn btn-secundary btn-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-camera-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                      />
+                      <path
+                        d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"
+                      />
+                    </svg>
+                  </button>
+                  <button type="button" class="btn btn-secundary btn-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--DopdownButton-->
+        <div class="col-1 me-5 text-end">
+          <div class="dropdown me-5">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-gear-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                />
+              </svg>
+            </button>
+            <ul class="dropdown-menu align-start">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item text-danger" href="#">Login out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+      <!-- Grid Buttons -->
+      <div class="row">
+        <div class="grid-button my-3">
+          <ul
+            class="nav nav-tabs justify-content-center"
+            id="myTab"
+            role="tablist"
+          >
+            <!-- Grill button -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                <i class="bi bi-grid-3x3"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-grid-3x3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"
+                    />
+                  </svg>
+                </i>
+              </button>
+            </li>
+            <!-- Individual post button -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                <i class="bi bi-square"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-square"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                    /></svg></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Grill Content -->
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="row">
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height:400 ; width:600">
+              <img
+                class="img-fluid"
+                src="https://www.mundotoro.com/wp-content/uploads/2021/12/Malaga.jpg"
+                
+              />
+            </div>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width:600;">
+                <img
+                class="img-fluid"
+                src="https://ca-times.brightspotcdn.com/dims4/default/e9ca0fe/2147483647/strip/true/crop/1605x1070+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8b%2F07%2Fe91a86606630bfcdd256739e3b13%2Ff38865413d9d4b6293aefd50ba3d0eb1"
+               
+                />
+          </div>
+        </div>
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 600;">
+                <img
+                class="img-fluid"
+                src="https://puteshestvie.net/uploads/posts/2018-03/1522156662_1.jpg"
+                
+              />
+        </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 600;">
+              <img
+                class="img-fluid"
+                src="https://fotografias.antena3.com/clipping/cmsimages02/2022/12/19/57017F2A-8327-404D-8997-5C37A44CDC03/messi-replica-iconica-imagen-maradona-copa-mundo_98.jpg?crop=4096,2305,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+                />
+            </div>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 600;">
+              <img
+                class="img-fluid"
+                src="https://media.newyorker.com/photos/590966ee1c7a8e33fb38d6cc/master/w_2560%2Cc_limit/Nissan-Universe-Shouts.jpg"
+
+                />
+            </div>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 600;">
+              <img
+                class="img-fluid"
+                src="https://images.photowall.com/products/69237/lion-close-up.jpg?h=699&q=85"
+                />
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 600;">
+              <img
+                class="img-fluid"
+                src="https://images.squarespace-cdn.com/content/v1/60e6341f017575363ab46dbc/1627357208379-MVVT1Q1MZXUAFYOFJ3W3/placeholder-world.png?format=2500w"
+               
+                />
+            </div>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 550;">
+              <img
+                class="img-fluid"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Oldoinyolengai.jpg"
+   
+                />
+            </div>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="container d-flex p-0 mb-2" style="height: 400; width: 600;">
+              <img
+                class="img-fluid"
+                src="https://assets.weforum.org/article/image/XaHpf_z51huQS_JPHs-jkPhBp0dLlxFJwt-sPLpGJB0.jpg"
+               
+                />
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Post Content -->
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">Malaga, square!!</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://www.mundotoro.com/wp-content/uploads/2021/12/Malaga.jpg"
+                    alt=""
+                  />
+                  <div class="ms-2"><b>200 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">What you say??</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://ca-times.brightspotcdn.com/dims4/default/e9ca0fe/2147483647/strip/true/crop/1605x1070+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8b%2F07%2Fe91a86606630bfcdd256739e3b13%2Ff38865413d9d4b6293aefd50ba3d0eb1"
+                    alt=""
+                  />
+                  <div class="ms-2"><b>10000000000000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">Malaga Sunset!</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://puteshestvie.net/uploads/posts/2018-03/1522156662_1.jpg"
+                  />
+                  <div class="ms-2"><b>2000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">Dreaming with this image</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://fotografias.antena3.com/clipping/cmsimages02/2022/12/19/57017F2A-8327-404D-8997-5C37A44CDC03/messi-replica-iconica-imagen-maradona-copa-mundo_98.jpg?crop=4096,2305,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+                  />
+                  <div class="ms-2"><b>300000000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">Infinit</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://media.newyorker.com/photos/590966ee1c7a8e33fb38d6cc/master/w_2560%2Cc_limit/Nissan-Universe-Shouts.jpg"
+                  />
+                  <div class="ms-2"><b>5000000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">Simba</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://images.photowall.com/products/69237/lion-close-up.jpg?h=699&q=85"
+                  />
+                  <div class="ms-2"><b>40000000000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">Sabana</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Oldoinyolengai.jpg"
+                  />
+                  <div class="ms-2"><b>9000000000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">My Home</h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://images.squarespace-cdn.com/content/v1/60e6341f017575363ab46dbc/1627357208379-MVVT1Q1MZXUAFYOFJ3W3/placeholder-world.png?format=2500w"
+                  />
+                  <div class="ms-2"><b>40333000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="border rounded 3px solid-black m-2">
+                  <div class="row justify-content-beetwen">
+                    <div class="col m-2 d-flex">
+                      <h2 class="text-start">
+                        All Waching the future devloper
+                      </h2>
+                      <div class="col"><p class="text-end">13/01</p></div>
+                    </div>
+                  </div>
+
+                  <img
+                    class="img-fluid"
+                    src="https://assets.weforum.org/article/image/XaHpf_z51huQS_JPHs-jkPhBp0dLlxFJwt-sPLpGJB0.jpg"
+                  />
+                  <div class="ms-2"><b>4500000 Likes</b></div>
+                  <div class="mx-2">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
