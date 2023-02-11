@@ -1,7 +1,6 @@
 img{
-    /* padding: 20px; */
     margin: 0px;
-    height: 400px;
+    object-fit: cover;
 }
 .row{
     margin: 0px;
@@ -14,4 +13,7 @@ img{
 }
 body{
     background: gainsboro;
+}
+.individual{
+    min-width: 200px
 }
