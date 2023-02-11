@@ -1,0 +1,17 @@
+img{
+    /* padding: 20px; */
+    margin: 0px;
+    height: 400px;
+}
+.row{
+    margin: 0px;
+    padding: 10px;
+}
+
+.individual{
+    border: 10px solid rgb(70, 68, 68);
+    border-radius: 10px;
+}
+body{
+    background: gainsboro;
+}
