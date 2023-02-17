@@ -18,10 +18,10 @@
     <title>Instagram</title>
   </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid navContainer">
     <div class="row row-navbar d-flex">
       <nav class="navbar bg-body-tertiary">
-        <div class="col-md-9 ms-5">
+        <div class="col-8 ms-5">
           <a class="navbar-brand m-1" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,8 @@
           </a>
         </div>
         <!-- Button trigger modal -->
-        <div class="col col-modal d-flex">
+        <div class="col col-modal">
+          <div class="btn-modal">
           <button
             type="button"
             class="btn btn-success"
@@ -47,8 +48,9 @@
             data-bs-target="#exampleModal"
           >
             Create a new post
-          </button>
+          </button></div></div>
           <!--Dropdown Button-->
+          <div class="col dropdowCol">
           <div class="dropdown ms-3">
             <button
               class="btn btn-secondary dropdown-toggle"
@@ -69,6 +71,7 @@
                 />
               </svg>
             </button>
+            <div class="dropdowList">
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item">Action</a></li>
               <li><a class="dropdown-item">Another action</a></li>
@@ -77,10 +80,12 @@
               <li>
                 <a class="dropdown-item text-danger" href="#">Login out</a>
               </li>
-            </ul>
+            </ul></div>
           </div>
         </div>
-        <!-- Modal -->
+      </div>
+        
+        <!-- Modal Window -->
         <div
           class="modal fade"
           id="exampleModal"
@@ -326,9 +331,9 @@
           aria-labelledby="profile-tab"
           tabindex="0"
         >
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -356,9 +361,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -382,9 +387,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -407,9 +412,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -432,9 +437,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -457,9 +462,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -482,9 +487,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -508,9 +513,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">
@@ -533,9 +538,9 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col">
+          <div class="container postContainer">
+            <div class="row">
+              <div class="col postCol">
                 <div class="individual m-2">
                   <div class="row justify-content-beetwen">
                     <div class="col m-2 d-flex">

@@ -1,21 +1,38 @@
+body{
+    background: gainsboro;
+}
 .img-grid{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+.img-wraped{
+    max-width: 100%;
+}
 
+.col-grill{
+    display: flex;
+    justify-content: center;
+}
 .individual{
     border: 0.5px solid rgb(70, 68, 68);
     border-radius: 1px;
     min-width: 200px;
+    max-width: 600px;
 }
-body{
-    background: gainsboro;
+.postContainer{
+    justify-content: center;
 }
-.img-wraped{
-    max-width: 100%;
+.postCol{
+    justify-content: center;
+    display: flex;
 }
-.col-grill{
+
+.dropdowCol{
     display: flex;
     justify-content: center;
+}
+.col-modal{
+    display: flex;
+    justify-content: end;
 }
